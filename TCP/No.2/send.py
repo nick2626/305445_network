@@ -17,5 +17,5 @@ UploadFile = open(TEMP+FILE_NAME, "rb")
 Read = UploadFile.read(1024)
 while Read:
     sock.send(Read)
-    sRead = UploadFile.read(1024)
+    Read = UploadFile.read(1024)
 print "Sending Completed"
